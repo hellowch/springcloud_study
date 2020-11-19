@@ -13,7 +13,7 @@ import java.util.List;
 
 //fegin的负载均衡接口
 @Component
-@FeignClient(value = "SPRINGCLOUD-PROVIDER-DEPT")
+@FeignClient(value = "SPRINGCLOUD-PROVIDER-DEPT",fallbackFactory = DeptClientServiceFallBackFactory.class)
 public interface DeptClientService {
 
     @RequestMapping("/dept/get/{id}")
