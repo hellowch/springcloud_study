@@ -1,0 +1,10 @@
+server:
+  port: 9001
+
+management:
+  enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+      base-path: /

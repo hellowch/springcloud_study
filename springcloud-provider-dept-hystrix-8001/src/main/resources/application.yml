@@ -29,3 +29,4 @@ eureka:
 info:
   app.name: wch-springcloud
   company.name: blog.wchstudy.com
+
